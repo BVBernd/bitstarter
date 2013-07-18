@@ -7,7 +7,7 @@ var text = buf.toString();
 var text2 = "this is my text\n";
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send(text2);
 });
 
 var port = process.env.PORT || 5000;
