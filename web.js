@@ -1,5 +1,5 @@
 var express = require('express');
-var fs = require('fs') 
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
@@ -8,7 +8,7 @@ var text = test.toString();
 var text2 = "this is my text\n";
 
 app.get('/', function(request, response) {
-  response.send(text2);
+  response.send(text);
 });
 
 var port = process.env.PORT || 5000;
